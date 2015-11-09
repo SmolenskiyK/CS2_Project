@@ -153,6 +153,7 @@
             // saveOrEditribbonPageGroup
             // 
             this.saveOrEditribbonPageGroup.ItemLinks.Add(this.saveEditButtonItem);
+            this.saveOrEditribbonPageGroup.MergeOrder = 5;
             this.saveOrEditribbonPageGroup.Name = "saveOrEditribbonPageGroup";
             this.saveOrEditribbonPageGroup.Text = "Сохранение";
             // 
@@ -223,7 +224,7 @@
             this.loginTextEdit.StyleController = this.layoutControl1;
             this.loginTextEdit.TabIndex = 1;
             this.loginTextEdit.InvalidValue += new DevExpress.XtraEditors.Controls.InvalidValueExceptionEventHandler(this.loginTextEdit_InvalidValue);
-            this.loginTextEdit.Modified += new System.EventHandler(this.AnyTextEdit_Modified);
+            this.loginTextEdit.Modified += new System.EventHandler(this.AnyPasswordTextEdit_Modified);
             this.loginTextEdit.Validating += new System.ComponentModel.CancelEventHandler(this.loginTextEdit_Validating);
             // 
             // newPasswordTextEdit
